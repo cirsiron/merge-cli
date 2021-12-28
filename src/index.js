@@ -1,16 +1,4 @@
 /* eslint-disable no-template-curly-in-string */
-const shell = require('shelljs');
-
-if (!shell.which('git')) {
-  shell.echo('Sorry, this script requires git');
-  shell.exit(1);
-}
-
-if (!shell.which('node')) {
-  shell.echo('Sorry, this script requires node');
-  shell.exit(1);
-}
-
 const fs = require('fs');
 
 const PATH = require('path');
@@ -21,12 +9,19 @@ const UTF8 = 'utf8';
  * 递归创建目录
  */
 function makeDirs(path) {
+  console.log('创建目录 ================================');
   if (fs.existsSync(path)) {
+    console.log('start ================================');
+    console.log(`${path}已存在`);
+    console.log('end ================================');
     return true;
   }
   // eslint-disable-next-line no-unused-vars
   if (makeDirs(PATH.dirname(path))) {
     fs.mkdirSync(path);
+    console.log('start ================================');
+    console.log(`${path}创建成功`);
+    console.log('end ================================');
     return true;
   }
 }

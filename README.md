@@ -9,7 +9,7 @@ npm i -g vscode-merge-cli
 ```javascript
  1. cd到项目的根目录
  2. 全局安装 npm i -g vscode-merge-cli
- 3. 执行 merge-cli, 弹出的框选择或者输入对应分支进行合并
+ 3. 执行 vscode-merge-cli, 弹出的框选择或者输入对应分支进行合并
 ```
 ### 本地开发
 ```js
