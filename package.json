@@ -1,0 +1,23 @@
+{
+  "name": "vscode-merge-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "bin": {
+    "merge-cli": "./bin/index.js"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "pub": "npm publish"
+  },
+  "keywords": [
+    "shell",
+    "task",
+    "vscode"
+  ],
+  "author": "",
+  "license": "ISC"
+}
